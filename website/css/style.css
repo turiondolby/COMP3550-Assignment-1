@@ -1,0 +1,143 @@
+/*Applicable to all pages*/
+
+body {
+    /*background-image: url(https://lh3.googleusercontent.com/-kUs05mfHROc/UGkMQLCHoAI/AAAAAAAAAuo/PFifjwiPOlk/s1140/bg.jpg);*/
+}
+#centeredcontent {
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
+#nav_icon {
+    float: left;
+    width: 100px;
+    height: 50px;
+}
+.right_side_pics,
+.table_pic {
+    width: 240px;
+    height: 240px;
+    border: 2px solid gray;
+}
+.main_page {
+    width: 900px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+}
+article,
+form {
+    width: 850px;
+    margin-right: 10px;
+    float: left;
+}
+article h1 {
+    font-size: 110%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-top: 7pt;
+    border-top: 4px solid silver;
+    text-align: left;
+}
+.head {
+    padding-top: 20px;
+    text-shadow: 0.1em 0.1em 0.1em #2E64FE;
+    font-size: 230%;
+    text-align: left;
+}
+img.right_side_pics {
+    width: 240px;
+    height: 240px;
+    display: block;
+    float: right;
+    border: solid 2px blue;
+    padding: 2px;
+    margin: 3px 6pt 3px 5px
+}
+img.sidebar_pics {
+    margin: 5px;
+    width: 240px;
+    height: 200px;
+    display: block;
+    float: center;
+    border: solid 4px #A9D0F5;
+}
+iframe {
+    width: 305px;
+    height: 248px;
+}
+.vid {
+    border: 0;
+    width: 248px;
+    height: 248px;
+}
+aside {
+    box-shadow: 10px 10px 5px #888888;
+    float: right;
+    width: 248px;
+    background-color: #F0F0F0;
+    margin: 3pt 6pt 3pt 6pt;
+    padding: 6pt 0;
+    text-align: center;
+}
+aside a {
+    color: gold;
+    font-size: 90%;
+}
+aside h2 {
+    border-top: 4px solid gray;
+    font-size: 95%;
+    text-align: center;
+    text-decoration: underline;
+}
+aside p {
+    margin: 0 12pt;
+    font-family: Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 85%;
+    text-align: center;
+}
+aside header p {
+    font-size: 85%;
+}
+aside section {
+    padding: 5px 0;
+}
+.base_nav {
+    text-decoration: underline;
+    text-align: center;
+}
+.table_pic {
+    width: 283px;
+}
+footer {
+    float: left;
+    width: 100%;
+    position: relative;
+    top: 20px;
+}
+footer p {
+    word-spacing: 3px;
+    float: center;
+    text-align: center;
+    color: silver;
+    font-family: Tahoma, sans-serif;
+    padding: 10px 0;
+}
+.pic {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+/*Applicable to Media only*/
+
+#style {
+    float: right;
+}
+textarea {
+    width: 47em;
+    height: 5em;
+    text-align: left;
+    float: left;
+}
