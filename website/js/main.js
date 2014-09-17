@@ -1,15 +1,32 @@
-//validate check boxes
-function validateBoxes() {
-	// keep a count of how many checked
-	var boxesChecked=0;
-	// cycle thru all check-box ids - increment boxes checked var if true
-	for(var i=0; i<6; i++) {
-		document.getElementById("c"+String(i)).checked == true ? boxesChecked++: null; //abbreviated if statement
+function validate() {
+	"use strict";
+	var ddown,
+		value,
+		radios,
+		i,
+		check,
+		size;
+
+	ddown = document.getElementById("dropDown");
+	value = ddown.options[ddown.selectedIndex].value;
+	radios = document.getElementsByName("genderRadios");
+	i = 0;
+	check = false;
+	size = radios.length;
+
+	while (!check && i < size) {
+		if (radios[i].checked) {
+			check = true;
+		}
+		i += 1;
 	}
-	if (boxesChecked >=1) {
-		return 1;
+
+	if (check === false) {
+		alert("ERROR: Please select a gender.");
+	} else if (value === "none") {
+		alert("ERROR: Please select an option for how you found out about this website.");
 	} else {
-		alert("Please select at least 1 check-box!");
-		return 0;
+		return true;
 	}
+	return false;
 }
