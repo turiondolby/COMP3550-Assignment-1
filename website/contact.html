@@ -9,6 +9,7 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/sticky-footer-navbar.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!--HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -59,74 +60,135 @@
 		<div id="centeredcontent" class="page-header">
 			<h1 class=".h1">Come on board!</h1>
 		</div>
-		<p class="lead">
-			Please full out the required information below.
-		</p>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Please full out the required information below.</h3>
+			</div>
+			<div class="panel-body">
+
+				<form class="form-horizontal" role="form" onsubmit="return validate();">
+
+					<!-- name -->
+					<div class="form-group">
+						<div class="col-xs-9">
+							<input type="text" class="form-control" id="firstName" placeholder="First Name" autofocus='autofocus' required>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-9">
+							<input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+						</div>
+					</div>
+
+					<!-- email -->
+					<div class="form-group">
+						<div class="col-xs-9">
+							<input type="email" class="form-control" id="email" placeholder="Email" required>
+						</div>
+					</div>
+
+					<!-- password -->
+					<div class="form-group">
+						<div class="col-xs-9">
+							<input type="password" class="form-control" id="password" placeholder="Password" required>
+						</div>
+					</div>
+
+					<!-- gender radioBtn -->
+					<div class="form-group">
+						<label class="col-xs-2">Gender</label>
+						<div class="col-xs-2">
+							<label class="radio-inline">
+								<input type="radio" name="genderRadios" value="male">Male
+							</label>
+						</div>
+						<div class="col-xs-2">
+							<label class="radio-inline">
+								<input type="radio" name="genderRadios" value="female">Female
+							</label>
+						</div>
+						<div class="col-xs-3">
+							<label class="radio-inline">
+								<input type="radio" name="genderRadios" value="decline">Prefer not to say
+							</label>
+						</div>
+					</div>
+
+					<!-- drop down -->
+					<div class="form-group">
+						<label class="col-xs-4">How did you find out about this website?</label>
+						<div class="col-xs-3">
+							<select class="form-control" id="dropDown">
+								<option value="none" disabled selected>Select an option</option>
+								<option value="mouth">Word of mouth</option>
+								<option value="newspapers">Newspapers</option>
+								<option value="email">Email</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- comments -->
+					<div class="form-group">
+						<div class="col-xs-9">
+							<textarea rows="3" class="form-control" id="comments" placeholder="Comments (if any)"></textarea>
+						</div>
+					</div>
+					<!-- check box terms and conditons -->
+					<div class="form-group col-sm-10">
+						<div class="checkbox">
+							<label>
+								<input id="agreeTerms" type="checkbox">I agree to the <a href="#" data-toggle="modal" data-target="#termsConditions">Terms and Conditions</a>
+							</label>
+						</div>
+					</div>
+					<!-- check box monthly email -->
+					<div class="form-group col-sm-10">
+						<div class="checkbox">
+							<label>
+								<input id="monthlyEmail" type="checkbox">Receive monthly newsletters
+							</label>
+						</div>
+					</div>
+
+					<!-- Modal Conditions -->
+					<div class="modal fade" id="termsConditions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+									</button>
+									<h4 class="modal-title" id="myModalLabel">Terms and Conditions</h4>
+								</div>
+								<div class="modal-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed molestias beatae nam possimus facere odit voluptas, doloremque. Veniam blanditiis mollitia tenetur, modi dignissimos in asperiores, quia dolore cum, deserunt quidem!</p>
+									<p>Aut reiciendis iure ut libero alias aliquid vel quibusdam dolorem veniam at quod commodi mollitia laborum, facere, consectetur tenetur, officia maxime, repudiandae itaque. Odio, non, provident. Maxime eos magnam nihil.</p>
+									<p>Autem, facilis magnam. Magni libero vero maxime impedit a ipsa cumque similique error, cupiditate facere molestias. Optio, harum fugiat mollitia saepe ullam accusantium temporibus, tempora, ad aut sunt voluptatum exercitationem!</p>
+									<p>Laboriosam, eligendi reiciendis repellat voluptate cumque expedita nemo accusantium voluptatum ut facilis vel porro, corrupti dolores id? Sit, molestias possimus vitae modi, ipsam quasi eum deleniti, assumenda quidem, voluptate reiciendis.</p>
+									<p>Ipsa enim sit, dicta iusto accusantium dolorem est aperiam nemo facere asperiores repudiandae porro ex itaque tempora iure assumenda molestias quam, ducimus aut, culpa possimus modi vero. Perspiciatis, impedit non.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
 
 
-		<form class="form-horizontal" role="form" onsubmit="return validate();">
-			<div class="form-group">
-				<div class="col-xs-9">
-					<input type="text" class="form-control" id="firstName" placeholder="First Name" autofocus='autofocus' required>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-xs-9">
-					<input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-xs-2">
-					<label class="radio-inline">
-						<input type="radio" name="genderRadios" value="male" checked>Male
-					</label>
-				</div>
-				<div class="col-xs-2">
-					<label class="radio-inline">
-						<input type="radio" name="genderRadios" value="female">Female
-					</label>
-				</div>
-				<div class="col-xs-3">
-					<label class="radio-inline">
-						<input type="radio" name="genderRadios" value="decline">Prefer not to say
-					</label>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-xs-9">
-					<input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-sm-3">How did you find out about this website?</label>
-				<div class="col-xs-3">
-					<select class="form-control" id="info">
-						<option value="none" disabled selected>Select an option</option>
-						<option value="mouth">Word of mouth</option>
-						<option value="newspapers">Newspapers</option>
-						<option value="email">Email</option>
-						<option value="other">Other</option>
-					</select>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-xs-9">
-					<textarea rows="3" class="form-control" id="comments" placeholder="Comments (if any)"></textarea>
-				</div>
-			</div>
 
-
-
-
-			<div class="form-group">
-				<div class="col-xs-9">
-					<input type="submit" class="btn btn-primary" value="Submit">
-					<input type="reset" class="btn btn-danger" value="Reset">
-				</div>
+					<!-- submit buttons -->
+					<div class="form-group">
+						<div class="col-xs-9">
+							<input type="submit" class="btn btn-primary" value="Submit">
+							<input type="reset" class="btn btn-danger" value="Reset">
+						</div>
+					</div>
+				</form>
 			</div>
-		</form>
+		</div>
+
 		<!--SIDE BAR____________________________________________________________________________________________________________-->
-		<aside>
+		<!--<aside>
 
 			<p>[SIDE BAR TITLE]</p>
 
@@ -145,7 +207,7 @@
 				</p>
 			</section>
 
-		</aside>
+		</aside> -->
 
 	</div>
 
@@ -157,6 +219,7 @@
 
 
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 
 </html>
