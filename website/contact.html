@@ -58,15 +58,15 @@
 
 	<div class="container">
 		<div id="centeredcontent" class="page-header">
-			<h1 class=".h1">Come on board!</h1>
+			<h1>Join the cause!</h1>
 		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">Please full out the required information below.</h3>
+				<h3 class="panel-title ">Please full out the required information below.</h3>
 			</div>
 			<div class="panel-body">
 
-				<form class="form-horizontal" role="form" onsubmit="return validate();">
+				<form class="form-horizontal" role="form" onsubmit="return validate();" action="thanks.html" method="post">
 
 					<!-- name -->
 					<div class="form-group">
@@ -96,18 +96,18 @@
 
 					<!-- gender radioBtn -->
 					<div class="form-group">
-						<label class="col-xs-2">Gender</label>
-						<div class="col-xs-2">
+						<label class="col-sm-2">Gender</label>
+						<div class="col-sm-2">
 							<label class="radio-inline">
 								<input type="radio" name="genderRadios" value="male">Male
 							</label>
 						</div>
-						<div class="col-xs-2">
+						<div class="col-sm-2">
 							<label class="radio-inline">
 								<input type="radio" name="genderRadios" value="female">Female
 							</label>
 						</div>
-						<div class="col-xs-3">
+						<div class="col-sm-3">
 							<label class="radio-inline">
 								<input type="radio" name="genderRadios" value="decline">Prefer not to say
 							</label>
@@ -138,7 +138,7 @@
 					<div class="form-group col-sm-10">
 						<div class="checkbox">
 							<label>
-								<input id="agreeTerms" type="checkbox">I agree to the <a href="#" data-toggle="modal" data-target="#termsConditions">Terms and Conditions</a>
+								<input id="agreeTerms" type="checkbox" disabled>I agree to the <a href="#" data-toggle="modal" data-target="#termsConditions" id="termsAnchor" onclick="enableBox();">Terms and Conditions</a>
 							</label>
 						</div>
 					</div>
@@ -146,7 +146,7 @@
 					<div class="form-group col-sm-10">
 						<div class="checkbox">
 							<label>
-								<input id="monthlyEmail" type="checkbox">Receive monthly newsletters
+								<input id="monthlyEmail" type="checkbox" checked>Receive monthly newsletters
 							</label>
 						</div>
 					</div>
@@ -161,20 +161,19 @@
 									<h4 class="modal-title" id="myModalLabel">Terms and Conditions</h4>
 								</div>
 								<div class="modal-body">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed molestias beatae nam possimus facere odit voluptas, doloremque. Veniam blanditiis mollitia tenetur, modi dignissimos in asperiores, quia dolore cum, deserunt quidem!</p>
+									<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed molestias beatae nam possimus facere odit voluptas, doloremque. Veniam blanditiis mollitia tenetur, modi dignissimos in asperiores, quia dolore cum, deserunt quidem!</p>
 									<p>Aut reiciendis iure ut libero alias aliquid vel quibusdam dolorem veniam at quod commodi mollitia laborum, facere, consectetur tenetur, officia maxime, repudiandae itaque. Odio, non, provident. Maxime eos magnam nihil.</p>
 									<p>Autem, facilis magnam. Magni libero vero maxime impedit a ipsa cumque similique error, cupiditate facere molestias. Optio, harum fugiat mollitia saepe ullam accusantium temporibus, tempora, ad aut sunt voluptatum exercitationem!</p>
 									<p>Laboriosam, eligendi reiciendis repellat voluptate cumque expedita nemo accusantium voluptatum ut facilis vel porro, corrupti dolores id? Sit, molestias possimus vitae modi, ipsam quasi eum deleniti, assumenda quidem, voluptate reiciendis.</p>
 									<p>Ipsa enim sit, dicta iusto accusantium dolorem est aperiam nemo facere asperiores repudiandae porro ex itaque tempora iure assumenda molestias quam, ducimus aut, culpa possimus modi vero. Perspiciatis, impedit non.</p>
 								</div>
 								<div class="modal-footer">
+									<button type="button" id="modalAgree" class="btn btn-success" onclick="checkButton();" data-dismiss="modal">I agree</button>
 									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 								</div>
 							</div>
 						</div>
 					</div>
-
-
 
 					<!-- submit buttons -->
 					<div class="form-group">
@@ -219,7 +218,7 @@
 
 
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
