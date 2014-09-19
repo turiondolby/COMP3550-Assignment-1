@@ -19,3 +19,19 @@ xmlhttp.onreadystatechange=function()
 xmlhttp.open("GET","js/tip1.txt",true);
 xmlhttp.send();
 }
+
+var links=false;
+
+$(document).ready(function(){
+  $(document.getElementById("story")).click(function(){
+    if(!links) $(document.getElementById("story_links")).show("slow",function(){});
+	//else $(document.getElementById("story_links")).hide("slow",function(){});
+  });
+});
+
+$(document).ready(function(){
+  
+    $(document.getElementById("story_links")).hide("slow",function(){
+		
+    });
+});
