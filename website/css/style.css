@@ -1,7 +1,7 @@
 /*Applicable to all pages*/
 body{	 
-	/*background-image: url(https://lh3.googleusercontent.com/-kUs05mfHROc/UGkMQLCHoAI/AAAAAAAAAuo/PFifjwiPOlk/s1140/bg.jpg);*/
-
+	font-family: tahoma, sans-serif, arial;
+	
 	}
 
 
@@ -14,12 +14,35 @@ p{
 
 #nav_icon{
 	float: left;
-	width: 100px;
+	width: 50px;
 	height:50px;
 	}
+
+nav{
+	font-size: 120%;
+}
 	
-	
-	
+.page-header{
+	background: rgb(35,83,138); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(35,83,138,1) 0%, rgba(0,158,221,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(35,83,138,1)), color-stop(100%,rgba(0,158,221,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(35,83,138,1) 0%,rgba(0,158,221,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(35,83,138,1) 0%,rgba(0,158,221,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(35,83,138,1) 0%,rgba(0,158,221,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(35,83,138,1) 0%,rgba(0,158,221,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23538a', endColorstr='#009edd',GradientType=0 ); /* IE6-9 */
+
+
+	padding:2em;
+	margin-bottom:3em;
+}	
+
+.page-header h1{
+	font-size: 32pt;
+	color:#FCFCFC;
+}
+
+
 .right_side_pics, .table_pic{
 		width:240px;
 		height:240px;
@@ -42,7 +65,7 @@ p{
 	}
 	
 #main_page h1 {
-    font-size: 110%;
+   
     margin-top: 10px;
     margin-bottom: 0;
     padding-top: 7pt;
@@ -73,13 +96,11 @@ img.right_side_pics {
 	}
 
 	
-img.sidebar_pics{
-	margin: 5px;
-	width:240px;
-	height:200px;
-	display: block;
-    float: center;
-	border: solid 4px #A9D0F5;
+img.side_icons{
+	
+	width:10px;
+	height:10px;
+	
 	}
 
 iframe{
@@ -111,23 +132,21 @@ aside{
 }
 
 aside a{
-	margin: 0 12pt;
-    font-family: tahoma, sans-serif;
-    font-style: italic;
-	text-align:center;
+	
+	
 	}
 
 aside h2 { 
 	border-top: 4px solid gray;
-	font-size: 95%; 
+	font-size: 14pt; 
 	text-align: center;
 	text-decoration: underline;
-
+	padding:10px;
 	}
 	
-aside li {
-    
-	
+aside ul {
+    list-style-type:none;
+	margin-right: 40px;
 	}	
 	
 aside p {
