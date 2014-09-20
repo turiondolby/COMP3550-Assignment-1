@@ -46,8 +46,6 @@ function validate() {
     }
 
     //perform error detection and sets focus to the error element
-    //will try to use Bootstrap CSS/JS/Jquery for better feedback
-
     if (check === false) {
         alert("ERROR: Please select a gender.");
         genderRadios[0].focus();
@@ -63,7 +61,7 @@ function validate() {
         }
     } else {
         alert("First name: " + firstName + "\nLast name: " + lastName + "\nEmail: " + email + "\nGender: " + gender +
-            "\nComments: " + comments + "\nMonthly email: " + monthlyEmail);
+            "\nFound out: " + value + "\nComments: " + comments + "\nMonthly email: " + monthlyEmail);
         return true;
     }
     return false;
