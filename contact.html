@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Water Sanitation - Contact</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/sticky-footer-navbar.css" rel="stylesheet">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!--HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Water Sanitation</a>
+			</div>
+
+			<nav class="navbar-collapse navbar-collapse collapse" role="navigation">
+				<img id="nav_icon" src="img/none.jpg" alt="nav-icon" />
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="methods.html">Methods</a></li>
+					<li><a href="page3.html">Page3</a></li>
+					<li><a href="organizations.html">Organizations</a></li>
+					<li class="active"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<!-- Begin page content -->
+
+
+	<div class="container">
+		<div id="centeredcontent" class="page-header">
+			<h1>Join the cause!</h1>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title ">Please full out the required information below.</h3>
+			</div>
+			<div class="panel-body">
+
+				<form class="form-horizontal" role="form" onsubmit="return validate();" action="thanks.html" method="post">
+
+					<!-- name -->
+					<div class="form-group">
+						<div class="col-xs-9">
+							<input type="text" class="form-control" id="firstName" placeholder="First Name" autofocus='autofocus' required>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-9">
+							<input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+						</div>
+					</div>
+
+					<!-- email -->
+					<div class="form-group">
+						<div class="col-xs-9">
+							<input type="email" class="form-control" id="email" placeholder="Email" required>
+						</div>
+					</div>
+
+					<!-- password -->
+					<div class="form-group">
+						<div class="col-xs-9">
+							<input type="password" class="form-control" id="password" placeholder="Password" required>
+						</div>
+					</div>
+
+					<!-- gender radioBtn -->
+					<div class="form-group">
+						<label class="col-sm-2">Gender</label>
+						<div class="col-sm-2">
+							<label class="radio-inline">
+								<input type="radio" name="genderRadios" value="male">Male
+							</label>
+						</div>
+						<div class="col-sm-2">
+							<label class="radio-inline">
+								<input type="radio" name="genderRadios" value="female">Female
+							</label>
+						</div>
+						<div class="col-sm-3">
+							<label class="radio-inline">
+								<input type="radio" name="genderRadios" value="decline">Prefer not to say
+							</label>
+						</div>
+					</div>
+
+					<!-- drop down -->
+					<div class="form-group">
+						<label class="col-xs-4">How did you find out about this website?</label>
+						<div class="col-xs-3">
+							<select class="form-control" id="dropDown">
+								<option value="none" disabled selected>Select an option</option>
+								<option value="mouth">Word of mouth</option>
+								<option value="newspapers">Newspapers</option>
+								<option value="email">Email</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- comments -->
+					<div class="form-group">
+						<div class="col-xs-9">
+							<textarea rows="3" class="form-control" id="comments" placeholder="Comments (if any)"></textarea>
+						</div>
+					</div>
+					<!-- check box terms and conditons -->
+					<div class="form-group col-sm-10">
+						<div class="checkbox">
+							<label>
+								<input id="agreeTerms" type="checkbox" disabled>I agree to the <a href="#" data-toggle="modal" data-target="#termsConditions" id="termsAnchor" onclick="enableBox();">Terms and Conditions</a>
+							</label>
+						</div>
+					</div>
+					<!-- check box monthly email -->
+					<div class="form-group col-sm-10">
+						<div class="checkbox">
+							<label>
+								<input id="monthlyEmail" type="checkbox" checked>Receive monthly newsletters
+							</label>
+						</div>
+					</div>
+
+					<!-- Modal Conditions -->
+					<div class="modal fade" id="termsConditions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+									</button>
+									<h4 class="modal-title" id="myModalLabel">Terms and Conditions</h4>
+								</div>
+								<div class="modal-body">
+									<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed molestias beatae nam possimus facere odit voluptas, doloremque. Veniam blanditiis mollitia tenetur, modi dignissimos in asperiores, quia dolore cum, deserunt quidem!</p>
+									<p>Aut reiciendis iure ut libero alias aliquid vel quibusdam dolorem veniam at quod commodi mollitia laborum, facere, consectetur tenetur, officia maxime, repudiandae itaque. Odio, non, provident. Maxime eos magnam nihil.</p>
+									<p>Autem, facilis magnam. Magni libero vero maxime impedit a ipsa cumque similique error, cupiditate facere molestias. Optio, harum fugiat mollitia saepe ullam accusantium temporibus, tempora, ad aut sunt voluptatum exercitationem!</p>
+									<p>Laboriosam, eligendi reiciendis repellat voluptate cumque expedita nemo accusantium voluptatum ut facilis vel porro, corrupti dolores id? Sit, molestias possimus vitae modi, ipsam quasi eum deleniti, assumenda quidem, voluptate reiciendis.</p>
+									<p>Ipsa enim sit, dicta iusto accusantium dolorem est aperiam nemo facere asperiores repudiandae porro ex itaque tempora iure assumenda molestias quam, ducimus aut, culpa possimus modi vero. Perspiciatis, impedit non.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" id="modalAgree" class="btn btn-success" onclick="checkButton();" data-dismiss="modal">I agree</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- submit buttons -->
+					<div class="form-group">
+						<div class="col-xs-9">
+							<input type="submit" class="btn btn-primary" value="Submit">
+							<input type="reset" class="btn btn-danger" value="Reset">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!--SIDE BAR____________________________________________________________________________________________________________-->
+		<!--<aside>
+
+			<p>[SIDE BAR TITLE]</p>
+
+
+			<header>
+				<h2>[SUBTITLE]</h2>
+			</header>
+			<p>
+				[Insert content here]
+			</p>
+			<img class="sidebar_pics" src="http://placehold.it/50x50" alt="Contact Us">
+			<section>
+				<h2>[Insert content here]</h2>
+				<p>
+					[Insert content here]
+				</p>
+			</section>
+
+		</aside> -->
+
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted">COMP 3550 | Assignment 1 | Semester 1, 2014</p>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
