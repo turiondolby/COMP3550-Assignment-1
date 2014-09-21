@@ -46,6 +46,8 @@ function validate() {
     }
 
     //perform error detection and sets focus to the error element
+    //will try to use Bootstrap CSS/JS/Jquery for better feedback
+
     if (check === false) {
         alert("ERROR: Please select a gender.");
         genderRadios[0].focus();
