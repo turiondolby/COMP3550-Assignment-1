@@ -1,3 +1,5 @@
+
+
 function loadXMLDoc()
 {
 var xmlhttp;
@@ -16,8 +18,13 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("tip").innerHTML=xmlhttp.responseText;
     }
   }
-xmlhttp.open("GET","tip1.txt",true);
-xmlhttp.send();
+
+if(!(xmlhttp.open("GET","tips/tip1.txt",true))){
+	console.log("server error");
+	document.getElementById("tip").innerHTML="Error: cannot retrieve data from server";
+	}
+else xmlhttp.send();
+
 }
 
 

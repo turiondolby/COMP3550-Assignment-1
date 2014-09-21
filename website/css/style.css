@@ -4,7 +4,6 @@ body{
 	
 	}
 
-
 #centeredcontent {text-align: center;}
 
 p{
@@ -43,22 +42,9 @@ nav{
 }
 
 
-.right_side_pics, .table_pic{
-		width:240px;
-		height:240px;
-		border: 2px solid gray;
-	}	
 
-
-.main_page{
 	
-	width: 900px;
-	margin: auto;	
-	position:relative;
-	top: 20px;
-	}
-	
-#main_page, form {
+form {
     width: 900px;
     margin-right: 10px;
     float: left;	
@@ -80,74 +66,50 @@ nav{
 	text-align: left;
 	}	
 	
-.page-header h1{
-	
-}	
 
-img.right_side_pics {
-    width:240px;
-	height:240px;
-	display: block;
-    float: right;
-    border: solid 2px blue;
-    padding: 2px;
-    margin: 3px 6pt 3px 5px
-	
-	}
+
 
 	
 img.side_icons{
-	
 	width:10px;
 	height:10px;
-	
+	cursor:pointer;
 	}
 
-iframe{
-	width:305px;
-	height:248px;
+#vids{
+	
+	margin-top:10em;
+	
 	}
 	
 .vid{
 	border:0;
-	width:280px;
-	height:260px;
-	margin:7px;
+	margin:auto;
+	width:300px;
+	height:300px;
 	}
 	
 td p{
-	
 	margin:20px;
 	}
 	
 aside{
 	box-shadow: 10px 10px 5px #888888;
-	float: left;
-    width: 200px;
-
+	float: right;
     background-color: #F0F0F0  ;
-    margin: 3pt 6pt 3pt 6pt;
     padding: 6pt 0;
-	text-align:center;	
+	
 }
-
-aside a{
-	
-	
-	}
 
 aside h2 { 
 	border-top: 4px solid gray;
-	font-size: 14pt; 
+	font-size: 12pt; 
 	text-align: center;
 	text-decoration: underline;
 	padding:10px;
 	}
 	
-aside ul {
-    list-style-type:none;
-	margin-right: 40px;
-	}	
+
 	
 aside p {
     
@@ -169,10 +131,11 @@ aside section {
 
 
 .base_nav{
-	margin-top:20px;
+	margin-top:30px;
 	}
 	
 .base_nav td{
+
 	padding:20px;
 	}
 	
@@ -189,6 +152,8 @@ aside section {
 
 .table_pic{
 	width:260px;
+		height:240px;
+		border: 2px solid gray;
 	}
 
 footer{
@@ -213,19 +178,19 @@ footer p {
 {
 	margin-right: auto;
 	margin-left: auto;
-
 	display: block;
 }
 
-	
+.pic_pad{
+	padding: 0 10px;
+	border: none;
+}
 
+.method_nav{
+	position: fixed;
+	right: 70px;
+}
 
-
-/*Applicable to Media only*/	
-#style{
-	float: right;
-	}
-	
 textarea{
 	width:47em;
 	height:5em;
